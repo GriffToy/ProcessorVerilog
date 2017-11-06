@@ -1,0 +1,362 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/simulation/modelsim
+vALU74381
+Z1 !s110 1472927312
+!i10b 1
+!s100 I]zjmT_]K;Kh4Dgj8DNN81
+I_Mmc[g_Ld=feVi@RJacVP1
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+Z3 w1465028997
+8C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/ALU74381.v
+FC:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/ALU74381.v
+L0 18
+Z4 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1472927312.678000
+!s107 C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/ALU74381.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump|C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/ALU74381.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump}
+n@a@l@u74381
+vButtonSync
+R1
+!i10b 1
+!s100 @XSNlVF2@I_@`@H:5WH^A1
+IV@a:oCIiob4eYkiU[H5:52
+R2
+R0
+R3
+8C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/ButtonSync.v
+FC:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/ButtonSync.v
+L0 11
+R4
+r1
+!s85 0
+31
+!s108 1472927312.553000
+!s107 C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/ButtonSync.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump|C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/ButtonSync.v|
+!i113 1
+R5
+R6
+n@button@sync
+vController
+R1
+!i10b 1
+!s100 6?nBPkWd0gVHK9E3>d9QH1
+IYYf;I=SFXV@ka5KaoKiEQ0
+R2
+R0
+w1465107973
+8C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Controller.v
+FC:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Controller.v
+L0 5
+R4
+r1
+!s85 0
+31
+!s108 1472927312.865000
+!s107 C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump|C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Controller.v|
+!i113 1
+R5
+R6
+n@controller
+vDatapath
+Z7 !s110 1472927313
+!i10b 1
+!s100 N6RN^:fRHPJOj<n;gCNVV0
+InKK4KB[3oNT6HbZL=f@@_1
+R2
+R0
+R3
+8C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Datapath.v
+FC:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Datapath.v
+L0 5
+R4
+r1
+!s85 0
+31
+!s108 1472927312.990000
+!s107 C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Datapath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump|C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Datapath.v|
+!i113 1
+R5
+R6
+n@datapath
+vDataRAM
+R7
+!i10b 1
+!s100 JgS1Q]PzdlzCg<?c04H[51
+I?KEOZFHCV;^n9Bce?KlS:3
+R2
+R0
+R3
+8C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/DataRAM.v
+FC:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/DataRAM.v
+Z8 L0 40
+R4
+r1
+!s85 0
+31
+!s108 1472927313.131000
+!s107 C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/DataRAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump|C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/DataRAM.v|
+!i113 1
+R5
+R6
+n@data@r@a@m
+vHex7seg
+R1
+!i10b 1
+!s100 ;;:46FWzD3_@>QhBCT27=1
+IiFH=dFH>[kg]H5IQe0c?=1
+R2
+R0
+R3
+8C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Hex7seg.v
+FC:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Hex7seg.v
+L0 7
+R4
+r1
+!s85 0
+31
+!s108 1472927312.490000
+!s107 C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Hex7seg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump|C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Hex7seg.v|
+!i113 1
+R5
+R6
+n@hex7seg
+vInstROM
+R7
+!i10b 1
+!s100 [9]NX^A90W5:jm@ZQfToh0
+ID9T<K>^2i;X<;XL;70MK93
+R2
+R0
+R3
+8C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/InstROM.v
+FC:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/InstROM.v
+R8
+R4
+r1
+!s85 0
+31
+!s108 1472927313.069000
+!s107 C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/InstROM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump|C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/InstROM.v|
+!i113 1
+R5
+R6
+n@inst@r@o@m
+vKeyFilter
+R1
+!i10b 1
+!s100 XPl<69MNF9U8D>2k6o9=g1
+IlQF;aZC?[kzaml^GNJecU0
+R2
+R0
+R3
+8C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/KeyFilter.v
+FC:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/KeyFilter.v
+L0 8
+R4
+r1
+!s85 0
+31
+!s108 1472927312.615000
+!s107 C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/KeyFilter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump|C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/KeyFilter.v|
+!i113 1
+R5
+R6
+n@key@filter
+vLabB
+R1
+!i10b 1
+!s100 =NdOgzc:<];02_R_CSj]O0
+I=aCW11aD`e7KJ]gelImT02
+R2
+R0
+Z9 w1465028998
+8C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/LabB.v
+FC:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/LabB.v
+L0 19
+R4
+r1
+!s85 0
+31
+!s108 1472927312.740000
+!s107 C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/LabB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump|C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/LabB.v|
+!i113 1
+R5
+R6
+n@lab@b
+vMux16w_8to1
+R1
+!i10b 1
+!s100 3jFi=9R7l38WdzKQR^iz12
+IKcB?SSUkQ=O<l;ZR^?M5h3
+R2
+R0
+R9
+8C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux16w_8to1.v
+FC:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux16w_8to1.v
+L0 6
+R4
+r1
+!s85 0
+31
+!s108 1472927312.225000
+!s107 C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux16w_8to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump|C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux16w_8to1.v|
+!i113 1
+R5
+R6
+n@mux16w_8to1
+vMux2_1
+R1
+!i10b 1
+!s100 T7BkWY>hjgFd9l]QkVfn@0
+I21>88jUI<Bd[WnK3X=UIR0
+R2
+R0
+R9
+8C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux2_1.v
+FC:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux2_1.v
+L0 6
+R4
+r1
+!s85 0
+31
+!s108 1472927312.428000
+!s107 C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux2_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump|C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux2_1.v|
+!i113 1
+R5
+R6
+n@mux2_1
+vMux8_1
+R1
+!i10b 1
+!s100 n4ajm^J8XlHG7GomzcTo93
+IHQJgRo;f9L:l=hLU0Z]oL0
+R2
+R0
+R9
+8C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux8_1.v
+FC:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux8_1.v
+L0 16
+R4
+r1
+!s85 0
+31
+!s108 1472927312.287000
+!s107 C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux8_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump|C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux8_1.v|
+!i113 1
+R5
+R6
+n@mux8_1
+vProcessor
+R1
+!i10b 1
+!s100 8c33F@>_0R`2Xl2Y_n:TR3
+IGdZXn89A0>llCWijj4cJi3
+R2
+R0
+R9
+8C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Processor.v
+FC:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Processor.v
+L0 5
+R4
+r1
+!s85 0
+31
+!s108 1472927312.803000
+!s107 C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Processor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump|C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Processor.v|
+!i113 1
+R5
+R6
+n@processor
+vRegisterFile
+R7
+!i10b 1
+!s100 6E_?ha@X7H9`^OdHVmLk90
+IUa7>g0;e0?7zHW:8iNF2?1
+R2
+R0
+R9
+8C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/RegisterFile.v
+FC:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/RegisterFile.v
+R8
+R4
+r1
+!s85 0
+31
+!s108 1472927313.194000
+!s107 C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/RegisterFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump|C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/RegisterFile.v|
+!i113 1
+R5
+R6
+n@register@file
+vStateMachine
+R1
+!i10b 1
+!s100 _:b3QdGiZM>k6DzBj9RAb0
+InFa7Mn1RTBB0Ffmj?@8j43
+R2
+R0
+w1472926371
+8C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/StateMachine.v
+FC:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/StateMachine.v
+L0 5
+R4
+r1
+!s85 0
+31
+!s108 1472927312.928000
+!s107 C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/StateMachine.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump|C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/StateMachine.v|
+!i113 1
+R5
+R6
+n@state@machine
+vtestProcessor
+R7
+!i10b 1
+!s100 S@0]8CA;C45C178h5mHad3
+I1T7RWgR8a9d5KE]`1Y4nG1
+R2
+R0
+w1472926679
+8C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/testProcessor.v
+FC:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/testProcessor.v
+L0 7
+R4
+r1
+!s85 0
+31
+!s108 1472927313.272000
+!s107 C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/testProcessor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump|C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/testProcessor.v|
+!i113 1
+R5
+R6
+ntest@processor

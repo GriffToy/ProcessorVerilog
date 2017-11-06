@@ -1,0 +1,272 @@
+// TCES 330, Spring 2016
+// 5/22/2016
+// Enkhamgalan Baterdene, Sandeep Heera, Griffin Toyoda
+
+module StateMachine(Clk, IR, Reset, ALU_s, D_addr, D_wr, IR_ID, NextState_Out, PC_clr, PC_inc, RF_A_addr, RF_B_addr, RF_WenA, RF_WenB, State_Out, PC_up);
+	input Clk, Reset;
+	input [15:0] IR;
+	output reg [2:0] ALU_s = 3'b0;
+	output reg [7:0] D_addr = 8'b0;
+	output reg D_wr = 0, IR_ID = 0;
+	output [7:0] NextState_Out;
+	output reg PC_clr = 0, PC_inc = 0;
+	output reg [3:0] RF_A_addr = 4'b0, RF_B_addr = 4'b0;
+	output reg RF_WenA = 0, RF_WenB = 0;
+	output [7:0] State_Out;
+	output reg [4:0] PC_up = 5'b0;
+	
+	localparam Init = 8'd0, Fetch = 8'd1, Decode = 8'd2, NOOP = 8'd3, LOAD_A = 8'd4, LOAD_B = 8'd5, STOREA = 8'd6,
+					STOREB = 8'd7, ADDA = 8'd8, ADDB = 8'd9, SUBA = 8'd10, SUBB = 8'd11, HALT = 8'd12, JUMPA = 8'd13, JUMPB = 8'd14;
+					
+	reg [7:0] State = 0; 
+	reg [7:0] NextState = 0;
+	assign State_Out = State;
+	assign NextState_Out = NextState;
+	
+	always @ (State or IR)
+	begin : FSM_COMBO
+		NextState = Init;
+		case(State)
+			Init		:	NextState = Fetch;
+			Fetch 	:	NextState = Decode;
+			Decode	:	begin 
+								if(IR[15:12] == 0) begin
+									NextState = NOOP;
+								end
+								else if(IR[15:12] == 2) begin
+									NextState = LOAD_A;
+								end
+								else if(IR[15:12] == 1) begin
+									NextState = STOREA;
+								end
+								else if(IR[15:12] == 3) begin
+									NextState = ADDA;
+								end
+								else if(IR[15:12] == 4) begin
+									NextState = SUBA;
+								end
+								else if(IR[15:12] == 5) begin
+									NextState = JUMPA;
+								end
+								else begin
+									NextState = HALT;
+								end 
+							end
+			NOOP		:	NextState = Fetch;
+			LOAD_A	: 	NextState = LOAD_B;
+			LOAD_B	:	NextState = Fetch;
+			STOREA	:	NextState = STOREB;
+			STOREB	:	NextState = Fetch;
+			ADDA		: 	NextState = ADDB;
+			ADDB		:	NextState = Fetch;
+			SUBA		: 	NextState = SUBB;
+			SUBB		:	NextState = Fetch;
+			HALT		:	NextState = HALT;
+			JUMPA		:	NextState = JUMPB;
+			JUMPB		:	NextState = Fetch;
+			default : NextState = Init;
+		endcase
+	end
+					
+		//----------Seq Logic-----------------------------
+	always @ (posedge Clk)
+	begin : FSM_SEQ
+		if (Reset == 1'b1) begin
+			State <=  Init;
+		end else begin
+			State <=  NextState;
+		end
+	end
+	
+	
+	//----------Output Logic-----------------------------
+	// From page 24 of the slides
+	always @ (*)
+	begin : OUTPUT_LOGIC
+			case(State)
+				Init		:	begin
+									PC_clr = 1'b1;
+									IR_ID = 1'b0;
+									PC_inc = 1'b0;
+									D_addr = 8'b0;
+									RF_WenA = 1'b0;
+									RF_WenB = 1'b0;
+									RF_A_addr = 4'b0;
+									RF_B_addr = 4'b0;
+									D_wr = 1'b0;
+									ALU_s  = 1'b0;//x;
+									PC_up = 5'b1;
+								end
+				Fetch		:	begin
+									PC_clr = 1'b0;
+									IR_ID = 1'b1;
+									PC_inc = 1'b0;
+									D_addr = 8'b0;
+									RF_WenA = 1'b0;
+									RF_WenB = 1'b0;
+									RF_A_addr = 4'b0;
+									RF_B_addr = 4'b0;
+									D_wr = 1'b0;
+									ALU_s  = 1'b0;//x;
+									PC_up = 5'b1;
+								end
+				Decode	:	begin
+									PC_clr = 1'b0;
+									IR_ID = 1'b0;
+									PC_inc = 1'b1;
+									D_addr = 8'b0;
+									RF_WenA = 1'b0;
+									RF_WenB = 1'b0;
+									RF_A_addr = 4'b0;
+									RF_B_addr = 4'b0;
+									D_wr = 1'b0;
+									ALU_s  = 1'b0;//x;
+									PC_up = 5'b1;
+								end
+				LOAD_A		:	begin
+									PC_clr = 1'b0;
+									IR_ID = 1'b0;
+									PC_inc = 1'b0;
+									D_addr = IR[11:4];
+									RF_WenA = 1'b0;
+									RF_WenB = 1'b0;
+									RF_A_addr = 4'b0;
+									RF_B_addr = 4'b0;
+									D_wr = 1'b0;
+									ALU_s  = 1'b0;//x;
+									PC_up = 5'b1;
+								end
+				LOAD_B		:	begin
+									PC_clr = 1'b0;
+									IR_ID = 1'b0;
+									PC_inc = 1'b0;
+									D_addr = IR[11:4];
+									RF_WenA = 1'b1;
+									RF_WenB = 1'b0;
+									RF_A_addr = IR[3:0];
+									RF_B_addr = 4'b0;
+									D_wr = 1'b0;
+									ALU_s  = 1'b0;//x;
+									PC_up = 5'b1;
+								end 
+				STOREA	 :	begin
+									PC_clr = 1'b0;
+									IR_ID = 1'b0;
+									PC_inc = 1'b0;
+									D_addr = 8'b0;
+									RF_WenA = 1'b0;
+									RF_WenB = 1'b0;
+									RF_A_addr = IR[11:8];
+									RF_B_addr = 4'b0;
+									D_wr = 1'b0;
+									ALU_s  = 1'b0;//x;
+									PC_up = 5'b1;
+								end
+				STOREB 	:	begin
+									PC_clr = 1'b0;
+									IR_ID = 1'b0;
+									PC_inc = 1'b0;
+									D_addr = IR[7:0];
+									RF_WenA = 1'b0;
+									RF_WenB = 1'b0;
+									RF_A_addr = 4'b0;
+									RF_B_addr = 4'b0;
+									D_wr = 1'b1;
+									ALU_s  = 1'b0;//x;
+									PC_up = 5'b1;
+								end
+				ADDA		:	begin
+									PC_clr = 1'b0;
+									IR_ID = 1'b0;
+									PC_inc = 1'b0;
+									D_addr = 8'b0;
+									RF_WenA = 1'b0;
+									RF_WenB = 1'b0;
+									RF_A_addr = IR[11:8];
+									RF_B_addr = IR[7:4];
+									D_wr = 1'b0;
+									ALU_s  = 1'b1;			// ALU code for add
+									PC_up = 5'b1;
+								end
+				ADDB		:	begin
+									PC_clr = 1'b0;
+									IR_ID = 1'b0;
+									PC_inc = 1'b0;
+									D_addr = 8'b0;
+									RF_WenA = 1'b0;
+									RF_WenB = 1'b1;
+									RF_A_addr = 4'b0;
+									RF_B_addr = IR[3:0];
+									D_wr = 1'b0;
+									ALU_s  = 1'b1;			// ALU code for add
+									PC_up = 5'b1;
+								end
+				SUBA		:	begin
+									PC_clr = 1'b0;
+									IR_ID = 1'b0;
+									PC_inc = 1'b0;
+									D_addr = 8'b0;
+									RF_WenA = 1'b0;
+									RF_WenB = 1'b0;
+									RF_A_addr = IR[11:8];
+									RF_B_addr = IR[7:4];
+									D_wr = 1'b0;
+									ALU_s  = 3'b10;			// ALU code for subtract
+									PC_up = 5'b1;
+								end
+				SUBB		:	begin
+									PC_clr = 1'b0;
+									IR_ID = 1'b0;
+									PC_inc = 1'b0;
+									D_addr = 8'b0;
+									RF_WenA = 1'b0;
+									RF_WenB = 1'b1;
+									RF_A_addr = 4'b0;
+									RF_B_addr = IR[3:0];
+									D_wr = 1'b0;
+									ALU_s  = 3'b10;			// ALU code for subtract
+									PC_up = 5'b1;
+								end
+				JUMPA : begin
+									PC_clr = 1'b0;
+									IR_ID = 1'b0;
+									PC_inc = 1'b1;
+									D_addr = 8'b0;
+									RF_WenA = 1'b0;
+									RF_WenB = 1'b0;
+									RF_A_addr = 4'b0;
+									RF_B_addr = 4'b0;
+									D_wr = 1'b0;
+									ALU_s  = 1'b0;
+									PC_up = IR[4:0] - 5'b1;
+				end
+				JUMPB : begin
+									PC_clr = 1'b0;
+									IR_ID = 1'b0;
+									PC_inc = 1'b0;
+									D_addr = 8'b0;
+									RF_WenA = 1'b0;
+									RF_WenB = 1'b0;
+									RF_A_addr = 4'b0;
+									RF_B_addr = 4'b0;
+									D_wr = 1'b0;
+									ALU_s  = 1'b0;
+									PC_up = 5'b0;
+				end
+				default : begin
+									PC_clr = 1'b0;
+									IR_ID = 1'b0;
+									PC_inc = 1'b0;
+									D_addr = 8'b0;
+									RF_WenA = 1'b0;
+									RF_WenB = 1'b0;
+									RF_A_addr = 4'b0;
+									RF_B_addr = 4'b0;
+									D_wr = 1'b0;
+									ALU_s  = 1'b0;
+									PC_up = 5'b1;
+				end
+			endcase
+	end // End Of Block OUTPUT_LOGIC
+	
+endmodule

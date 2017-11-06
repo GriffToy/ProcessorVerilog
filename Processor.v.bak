@@ -1,0 +1,11 @@
+module Processor( Clk, Reset, IR_Out, PC_Out, State, NextState, ALU_A, ALU_B, ALU_Out );
+	input Clk; // processor clock
+	input Reset; // system reset
+	output [15:0] IR_Out; // Instruction register
+	output [4:0] PC_Out; // Program counter
+	output [3:0] State; // FSM current state
+	output [4:0] NextState; // FSM next state (or 0 if you don’t use one)
+	output [15:0] ALU_A; // ALU A-Side Input
+	output [15:0] ALU_B; // ALU B-Side Input
+	output [15:0] ALU_Out; // ALU current output
+endmodule

@@ -1,0 +1,24 @@
+
+State Machine - |LabB|Processor:ProcessorInst|Controller:PControl|StateMachine:SM|State
+Name State.JUMPB State.JUMPA State.HALT State.SUBB State.SUBA State.ADDB State.ADDA State.STOREB State.STOREA State.LOAD_B State.LOAD_A State.NOOP State.Decode State.Fetch State.00000000 
+State.00000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+State.Fetch 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+State.Decode 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+State.NOOP 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+State.LOAD_A 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+State.LOAD_B 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+State.STOREA 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+State.STOREB 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+State.ADDA 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+State.ADDB 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+State.SUBA 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+State.SUBB 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+State.HALT 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+State.JUMPA 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State.JUMPB 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |LabB|ButtonSync:BS|State
+Name State.S_A State.S_C State.S_B 
+State.S_A 0 0 0 
+State.S_B 1 0 1 
+State.S_C 1 1 0 

@@ -1,0 +1,48 @@
+Quartus II Archive log --	C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/LabB_tmp_archive.qarlog
+
+Archive:	C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/LabB_tmp_archive.qar
+Date:		Wed Jun 08 11:07:52 2016
+Quartus II 64-Bit		15.0.0 Build 145 04/22/2015 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/ALU74381.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/ButtonSync.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Controller.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/DataMem.mif
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/DataRAM.qip
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/DataRAM.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/DataRAM_bb.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/DataRAM_inst.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Datapath.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Hex7seg.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/InstMem.mif
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/InstROM.qip
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/InstROM.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/InstROM_bb.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/InstROM_inst.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/KeyFilter.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/LabB.out.sdc
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/LabB.qpf
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/LabB.qsf
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/LabB.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux16w_8to1.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux2_1.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux8_1.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Processor.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/RegisterFile.qip
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/RegisterFile.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/RegisterFile_bb.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/RegisterFile_inst.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/StateMachine.v
+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/testProcessor.v
+c:/altera/15.0/quartus/bin64/assignment_defaults.qdf
+	======= Total: 31 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Wed Jun 08 11:07:55 2016
+Source archive file:	C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/LabB_tmp_archive.qar
+Archive was extracted into	C:/Users/Griff/Documents/Griffin Homework/TCES 330/Final/
+		 - successfully.

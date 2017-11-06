@@ -1,0 +1,10 @@
+module Datapath(ALU_s, Clk, D_addr, D_wr, RF_A_addr, RF_B_addr, RF_WenA, RF_WenB, ALU_A, ALU_B, ALU_Out);
+	input [2:0] ALU_s
+	input Clk;
+	input [7:0] D_addr;
+	input D_wr
+	input [3:0] RF_A_addr, RF_B_addr;
+	input RF_WenA, RF_WenB
+	output [15:0] ALU_A, ALU_B, ALU_Out;
+	
+endmodule

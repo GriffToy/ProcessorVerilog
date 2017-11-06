@@ -1,0 +1,35 @@
+// TCES 330, Spring 2016
+// 5/22/2016
+// Griffin Toyoda
+
+// Top level module for LabB. Instantiates processor module
+// and interfaces to the DE2 board.
+
+// SW[17:15] switch settings as follows:
+// 0 => HEX7, HEX6 = PC; HEX5, HEX4 = Current State; Note: for this to correspond to the values
+// you set for your states, you should tell Quartus to use your state machine encoding.
+// 1 => HEX7, 6, 5, 4 = ALU_A (A-side input to ALU)
+// 2 => HEX7, 6, 5, 4 = ALU_B (B-side input to ALU)
+// 3 => HEX7, 6, 5, 4 = ALU_Out (ALU output)
+// 4 => Next State (FSM next state variable, if you use one)
+// 5 Unused
+// 6 Unused
+// 7 Unused
+
+module LabB(SW, KEY, HEX0, HEX1, HEX2, HEX3);
+	input [17:0] SW;
+	input [2:0] KEY;					// KEY[2] is system clock, KEY[1] is synchronous reset
+	output [0:6] HEX0, HEX1, HEX2, HEX3;	//Displays current contents of the IR
+	
+	wire [7:0] Addr;					// Address into memory
+	wire [7:0] X;						// Memory contents
+	
+	// module SystemControl(Clk, Reset, Addr, X);
+	SystemControl SysCtrl(CLOCK_50, ~KEY[0], Addr, X);
+	
+	// module Hex7seg(C, Hex);
+	Hex7seg H0(X[3:0], HEX0);
+	Hex7seg H1(X[7:4], HEX1);
+	Hex7seg H4(Addr[3:0], HEX4);
+	Hex7seg H5(Addr[7:4], HEX5);
+endmodule

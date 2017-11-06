@@ -1,0 +1,302 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do LabB_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Griff/Documents/Griffin\ Homework/TCES\ 330/LabBJump {C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux16w_8to1.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:28:32 on Sep 03,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump" C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux16w_8to1.v 
+# -- Compiling module Mux16w_8to1
+# 
+# Top level modules:
+# 	Mux16w_8to1
+# End time: 11:28:32 on Sep 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Griff/Documents/Griffin\ Homework/TCES\ 330/LabBJump {C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux8_1.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:28:32 on Sep 03,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump" C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux8_1.v 
+# -- Compiling module Mux8_1
+# 
+# Top level modules:
+# 	Mux8_1
+# End time: 11:28:32 on Sep 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Griff/Documents/Griffin\ Homework/TCES\ 330/LabBJump {C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux2_1.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:28:32 on Sep 03,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump" C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Mux2_1.v 
+# -- Compiling module Mux2_1
+# 
+# Top level modules:
+# 	Mux2_1
+# End time: 11:28:32 on Sep 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Griff/Documents/Griffin\ Homework/TCES\ 330/LabBJump {C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Hex7seg.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:28:32 on Sep 03,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump" C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Hex7seg.v 
+# -- Compiling module Hex7seg
+# 
+# Top level modules:
+# 	Hex7seg
+# End time: 11:28:32 on Sep 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Griff/Documents/Griffin\ Homework/TCES\ 330/LabBJump {C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/ButtonSync.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:28:32 on Sep 03,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump" C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/ButtonSync.v 
+# -- Compiling module ButtonSync
+# 
+# Top level modules:
+# 	ButtonSync
+# End time: 11:28:32 on Sep 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Griff/Documents/Griffin\ Homework/TCES\ 330/LabBJump {C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/KeyFilter.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:28:32 on Sep 03,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump" C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/KeyFilter.v 
+# -- Compiling module KeyFilter
+# 
+# Top level modules:
+# 	KeyFilter
+# End time: 11:28:32 on Sep 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Griff/Documents/Griffin\ Homework/TCES\ 330/LabBJump {C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/ALU74381.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:28:32 on Sep 03,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump" C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/ALU74381.v 
+# -- Compiling module ALU74381
+# 
+# Top level modules:
+# 	ALU74381
+# End time: 11:28:32 on Sep 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Griff/Documents/Griffin\ Homework/TCES\ 330/LabBJump {C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/LabB.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:28:32 on Sep 03,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump" C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/LabB.v 
+# -- Compiling module LabB
+# 
+# Top level modules:
+# 	LabB
+# End time: 11:28:32 on Sep 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Griff/Documents/Griffin\ Homework/TCES\ 330/LabBJump {C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Processor.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:28:32 on Sep 03,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump" C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Processor.v 
+# -- Compiling module Processor
+# 
+# Top level modules:
+# 	Processor
+# End time: 11:28:32 on Sep 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Griff/Documents/Griffin\ Homework/TCES\ 330/LabBJump {C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Controller.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:28:32 on Sep 03,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump" C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Controller.v 
+# -- Compiling module Controller
+# 
+# Top level modules:
+# 	Controller
+# End time: 11:28:32 on Sep 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Griff/Documents/Griffin\ Homework/TCES\ 330/LabBJump {C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/StateMachine.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:28:32 on Sep 03,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump" C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/StateMachine.v 
+# -- Compiling module StateMachine
+# 
+# Top level modules:
+# 	StateMachine
+# End time: 11:28:32 on Sep 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Griff/Documents/Griffin\ Homework/TCES\ 330/LabBJump {C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Datapath.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:28:32 on Sep 03,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump" C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Datapath.v 
+# -- Compiling module Datapath
+# 
+# Top level modules:
+# 	Datapath
+# End time: 11:28:33 on Sep 03,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Griff/Documents/Griffin\ Homework/TCES\ 330/LabBJump {C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/InstROM.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:28:33 on Sep 03,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump" C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/InstROM.v 
+# -- Compiling module InstROM
+# 
+# Top level modules:
+# 	InstROM
+# End time: 11:28:33 on Sep 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Griff/Documents/Griffin\ Homework/TCES\ 330/LabBJump {C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/DataRAM.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:28:33 on Sep 03,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump" C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/DataRAM.v 
+# -- Compiling module DataRAM
+# 
+# Top level modules:
+# 	DataRAM
+# End time: 11:28:33 on Sep 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Griff/Documents/Griffin\ Homework/TCES\ 330/LabBJump {C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/RegisterFile.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:28:33 on Sep 03,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump" C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/RegisterFile.v 
+# -- Compiling module RegisterFile
+# 
+# Top level modules:
+# 	RegisterFile
+# End time: 11:28:33 on Sep 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Griff/Documents/Griffin\ Homework/TCES\ 330/LabBJump {C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/testProcessor.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:28:33 on Sep 03,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump" C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/testProcessor.v 
+# -- Compiling module testProcessor
+# 
+# Top level modules:
+# 	testProcessor
+# End time: 11:28:33 on Sep 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testProcessor
+# vsim -gui "+altera" -l msim_transcript -do "LabB_run_msim_rtl_verilog.do" 
+# Start time: 11:28:33 on Sep 03,2016
+# Loading work.testProcessor
+# Loading work.Processor
+# Loading work.Controller
+# Loading work.InstROM
+# Loading altera_mf_ver.altsyncram
+# Loading work.StateMachine
+# Loading work.Datapath
+# Loading work.DataRAM
+# Loading work.RegisterFile
+# Loading work.ALU74381
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Processor.v(24): [PCDPC] - Port size (8) does not match connection size (5) for port 'PC_Out'. The port definition is at: C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Controller.v(5).
+# 
+#         Region: /testProcessor/P2016/PControl
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Griff  Hostname: MININT-K8CLQTS  ProcessID: 15784
+# 
+#           Attempting to use alternate WLF file "./wlftdh6b7a".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftdh6b7a
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: testProcessor.P2016.PDatapath.RegisterN.altsyncram_component.m_default.altsyncram_inst
+# 
+# Begin Simulation.
+# Time is 0 : Reset = 1  State = 00 NextState = 01 ALU A = 0000  ALU B = 0000 ALU Out = 0000 PC_Out = Z0 IR_Out = 0000
+# Time is 20000 : Reset = 0  State = 00 NextState = 01 ALU A = 0000  ALU B = 0000 ALU Out = 0000 PC_Out = Z0 IR_Out = 0000
+# Time is 30000 : Reset = 0  State = 01 NextState = 02 ALU A = 0000  ALU B = 0000 ALU Out = 0000 PC_Out = Z0 IR_Out = 0000
+# Time is 50000 : Reset = 0  State = 02 NextState = 04 ALU A = 0000  ALU B = 0000 ALU Out = 0000 PC_Out = Z0 IR_Out = 20b0
+# Time is 70000 : Reset = 0  State = 04 NextState = 05 ALU A = 0000  ALU B = 0000 ALU Out = 0000 PC_Out = Z1 IR_Out = 20b0
+# Time is 90000 : Reset = 0  State = 05 NextState = 01 ALU A = 0000  ALU B = 0000 ALU Out = 0000 PC_Out = Z1 IR_Out = 20b0
+# Time is 110000 : Reset = 0  State = 01 NextState = 02 ALU A = cc05  ALU B = 0000 ALU Out = 0000 PC_Out = Z1 IR_Out = 20b0
+# Time is 130000 : Reset = 0  State = 02 NextState = 04 ALU A = cc05  ALU B = cc05 ALU Out = 0000 PC_Out = Z1 IR_Out = 21b1
+# Time is 150000 : Reset = 0  State = 04 NextState = 05 ALU A = cc05  ALU B = cc05 ALU Out = 0000 PC_Out = Z2 IR_Out = 21b1
+# Time is 170000 : Reset = 0  State = 05 NextState = 01 ALU A = cc05  ALU B = cc05 ALU Out = 0000 PC_Out = Z2 IR_Out = 21b1
+# Time is 190000 : Reset = 0  State = 01 NextState = 02 ALU A = 01b5  ALU B = cc05 ALU Out = 0000 PC_Out = Z2 IR_Out = 21b1
+# Time is 210000 : Reset = 0  State = 02 NextState = 04 ALU A = cc05  ALU B = cc05 ALU Out = 0000 PC_Out = Z2 IR_Out = 2062
+# Time is 230000 : Reset = 0  State = 04 NextState = 05 ALU A = cc05  ALU B = cc05 ALU Out = 0000 PC_Out = Z3 IR_Out = 2062
+# Time is 250000 : Reset = 0  State = 05 NextState = 01 ALU A = cc05  ALU B = cc05 ALU Out = 0000 PC_Out = Z3 IR_Out = 2062
+# Time is 270000 : Reset = 0  State = 01 NextState = 02 ALU A = 10ac  ALU B = cc05 ALU Out = 0000 PC_Out = Z3 IR_Out = 2062
+# Time is 290000 : Reset = 0  State = 02 NextState = 04 ALU A = cc05  ALU B = cc05 ALU Out = 0000 PC_Out = Z3 IR_Out = 28a3
+# Time is 310000 : Reset = 0  State = 04 NextState = 05 ALU A = cc05  ALU B = cc05 ALU Out = 0000 PC_Out = Z4 IR_Out = 28a3
+# Time is 330000 : Reset = 0  State = 05 NextState = 01 ALU A = cc05  ALU B = cc05 ALU Out = 0000 PC_Out = Z4 IR_Out = 28a3
+# Time is 350000 : Reset = 0  State = 01 NextState = 02 ALU A = a040  ALU B = cc05 ALU Out = 0000 PC_Out = Z4 IR_Out = 28a3
+# Time is 370000 : Reset = 0  State = 02 NextState = 0a ALU A = cc05  ALU B = cc05 ALU Out = 0000 PC_Out = Z4 IR_Out = 4010
+# Time is 390000 : Reset = 0  State = 0a NextState = 0b ALU A = cc05  ALU B = cc05 ALU Out = 0000 PC_Out = Z5 IR_Out = 4010
+# Time is 410000 : Reset = 0  State = 0b NextState = 01 ALU A = cc05  ALU B = 01b5 ALU Out = ca50 PC_Out = Z5 IR_Out = 4010
+# Time is 430000 : Reset = 0  State = 01 NextState = 02 ALU A = cc05  ALU B = ca50 ALU Out = 0000 PC_Out = Z5 IR_Out = 4010
+# Time is 450000 : Reset = 0  State = 02 NextState = 08 ALU A = ca50  ALU B = ca50 ALU Out = 0000 PC_Out = Z5 IR_Out = 3020
+# Time is 470000 : Reset = 0  State = 08 NextState = 09 ALU A = ca50  ALU B = ca50 ALU Out = 94a0 PC_Out = Z6 IR_Out = 3020
+# Time is 490000 : Reset = 0  State = 09 NextState = 01 ALU A = ca50  ALU B = 10ac ALU Out = dafc PC_Out = Z6 IR_Out = 3020
+# Time is 510000 : Reset = 0  State = 01 NextState = 02 ALU A = ca50  ALU B = dafc ALU Out = 0000 PC_Out = Z6 IR_Out = 3020
+# Time is 530000 : Reset = 0  State = 02 NextState = 0a ALU A = dafc  ALU B = dafc ALU Out = 0000 PC_Out = Z6 IR_Out = 4030
+# Time is 550000 : Reset = 0  State = 0a NextState = 0b ALU A = dafc  ALU B = dafc ALU Out = 0000 PC_Out = Z7 IR_Out = 4030
+# Time is 570000 : Reset = 0  State = 0b NextState = 01 ALU A = dafc  ALU B = a040 ALU Out = 3abc PC_Out = Z7 IR_Out = 4030
+# Time is 590000 : Reset = 0  State = 01 NextState = 02 ALU A = dafc  ALU B = 3abc ALU Out = 0000 PC_Out = Z7 IR_Out = 4030
+# Time is 610000 : Reset = 0  State = 02 NextState = 06 ALU A = 3abc  ALU B = 3abc ALU Out = 0000 PC_Out = Z7 IR_Out = 10cd
+# Time is 630000 : Reset = 0  State = 06 NextState = 07 ALU A = 3abc  ALU B = 3abc ALU Out = 0000 PC_Out = Z8 IR_Out = 10cd
+# Time is 650000 : Reset = 0  State = 07 NextState = 01 ALU A = 3abc  ALU B = 3abc ALU Out = 0000 PC_Out = Z8 IR_Out = 10cd
+# Time is 670000 : Reset = 0  State = 01 NextState = 02 ALU A = 3abc  ALU B = 3abc ALU Out = 0000 PC_Out = Z8 IR_Out = 10cd
+# Time is 690000 : Reset = 0  State = 02 NextState = 0d ALU A = 3abc  ALU B = 3abc ALU Out = 0000 PC_Out = Z8 IR_Out = 5003
+# Time is 710000 : Reset = 0  State = 0d NextState = 0e ALU A = 3abc  ALU B = 3abc ALU Out = 0000 PC_Out = Z9 IR_Out = 5003
+# Time is 730000 : Reset = 0  State = 0e NextState = 01 ALU A = 3abc  ALU B = 3abc ALU Out = 0000 PC_Out = Zb IR_Out = 5003
+# Time is 750000 : Reset = 0  State = 01 NextState = 02 ALU A = 3abc  ALU B = 3abc ALU Out = 0000 PC_Out = Zb IR_Out = 5003
+# Time is 770000 : Reset = 0  State = 02 NextState = 08 ALU A = 3abc  ALU B = 3abc ALU Out = 0000 PC_Out = Zb IR_Out = 3020
+# Time is 790000 : Reset = 0  State = 08 NextState = 09 ALU A = 3abc  ALU B = 3abc ALU Out = 7578 PC_Out = Zc IR_Out = 3020
+# Time is 810000 : Reset = 0  State = 09 NextState = 01 ALU A = 3abc  ALU B = 10ac ALU Out = 4b68 PC_Out = Zc IR_Out = 3020
+# Time is 830000 : Reset = 0  State = 01 NextState = 02 ALU A = 3abc  ALU B = 4b68 ALU Out = 0000 PC_Out = Zc IR_Out = 3020
+# Time is 850000 : Reset = 0  State = 02 NextState = 0a ALU A = 4b68  ALU B = 4b68 ALU Out = 0000 PC_Out = Zc IR_Out = 4040
+# Time is 870000 : Reset = 0  State = 0a NextState = 0b ALU A = 4b68  ALU B = 4b68 ALU Out = 0000 PC_Out = Zd IR_Out = 4040
+# Time is 890000 : Reset = 0  State = 0b NextState = 01 ALU A = 4b68  ALU B = 0000 ALU Out = 4b68 PC_Out = Zd IR_Out = 4040
+# Time is 910000 : Reset = 0  State = 01 NextState = 02 ALU A = 4b68  ALU B = 4b68 ALU Out = 0000 PC_Out = Zd IR_Out = 4040
+# 
+# End of Simulation.
+# 
+# ** Note: $stop    : C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/testProcessor.v(34)
+#    Time: 930 ns  Iteration: 2  Instance: /testProcessor
+# Break in Module testProcessor at C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/testProcessor.v line 34
+# Simulation Breakpoint: Break in Module testProcessor at C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/testProcessor.v line 34
+# MACRO ./LabB_run_msim_rtl_verilog.do PAUSED at line 31
+run -all
+# Time is 930000 : Reset = 0  State = 02 NextState = 0c ALU A = 4b68  ALU B = 4b68 ALU Out = 0000 PC_Out = Zd IR_Out = 6000
+# Time is 950000 : Reset = 0  State = 0c NextState = 0c ALU A = 4b68  ALU B = 4b68 ALU Out = 0000 PC_Out = Ze IR_Out = 6000
+restart -f
+# ** Warning: (vsim-3015) C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Processor.v(24): [PCDPC] - Port size (8) does not match connection size (5) for port 'PC_Out'. The port definition is at: C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Controller.v(5).
+# 
+#         Region: /testProcessor/P2016/PControl
+restart -f
+# ** Warning: (vsim-3015) C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Processor.v(24): [PCDPC] - Port size (8) does not match connection size (5) for port 'PC_Out'. The port definition is at: C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Controller.v(5).
+# 
+#         Region: /testProcessor/P2016/PControl
+vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps work.testProcessor
+# vsim 
+# Start time: 11:29:34 on Sep 03,2016
+# Loading work.testProcessor
+# Loading work.Processor
+# Loading work.Controller
+# Loading work.InstROM
+# Loading altera_mf_ver.altsyncram
+# Loading work.StateMachine
+# Loading work.Datapath
+# Loading work.DataRAM
+# Loading work.RegisterFile
+# Loading work.ALU74381
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Processor.v(24): [PCDPC] - Port size (8) does not match connection size (5) for port 'PC_Out'. The port definition is at: C:/Users/Griff/Documents/Griffin Homework/TCES 330/LabBJump/Controller.v(5).
+# 
+#         Region: /testProcessor/P2016/PControl
+# End time: 11:30:06 on Sep 03,2016, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 1
